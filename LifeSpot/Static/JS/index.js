@@ -54,3 +54,11 @@ let sessionLog = function logSession() {
         console.log(result)
     }
 }
+
+/*
+* Всплывающее окно будет показано по таймауту
+*
+* */
+setTimeout(() =>
+    alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
+    30000);
