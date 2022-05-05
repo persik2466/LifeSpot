@@ -5,6 +5,33 @@
     <title>LifeSpot</title>
     <!--Подключение стилей по относительному пути из внешнего файла-->
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <!-- Внешний скрипт с функциями -->
+    <script type="text/javascript" src="../Static/JS/index.js"></script>
+
+    <!-- Внутренний скрипт с вызовами функций -->
+    <script>
+        // Проверка на возраст
+        //checkAge();
+
+        // сохранение сессии
+        handleSession()
+
+        // вывод данных сессии в консоль
+        sessionLog();
+
+        // функция для получения пользовательского ввода
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+
+        /*
+        * Всплывающее окно будет показано по таймауту
+        *
+        * */
+        setTimeout(() =>
+            alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
+            30000);
+    </script>
 </head>
 <!--Хедер страницы находится сразу над тегом body-->
 <header id="header-index">
@@ -13,15 +40,22 @@
     <!--Параграф-->
     <p>Покажем, что происходит прямо сейчас</p>
     <!--Добавила текстовое поле-->
-    <input type="text" size=80>
+    <input type="text" oninput="
+
+       // Вызов (функция без аргумента)
+       filterContent()
+    " size=50%>
 </header>
+
 <!--Сайд-бар страницы-->
 <aside id="sidebar">
     <div class="navbar">
         <a href="/"><p>Все трансляции</p></a>
-        <a href="/"><p>О проекте</p></a>
+        <a href="/about"><p>О проекте</p></a>
+        <a href="/testing"><p>Тестирование</p></a>
     </div>
 </aside>
+
 <body>
     <div class="bordered">
         <div class="video-container">
@@ -41,8 +75,10 @@
         </div>
     </div>
 </body>
+
 <footer>
     <p>LifeSpot - все права защищены</p>
     <p>Связаться с нами: contact@lifespot.ru</p>
 </footer>
+
 </html>

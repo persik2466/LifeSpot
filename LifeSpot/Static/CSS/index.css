@@ -11,7 +11,7 @@ header, footer, body, .video-container {
 .video-container {
     display: inline-block;
     margin-top: 0.5em;
-    padding-left: 1%;
+    padding-left: 5%;
     padding-top: 1%;
 }
 
@@ -28,7 +28,7 @@ header, footer, body, .video-container {
 /*Глобальные стили для хедеров на всём сайте*/
 header {
     color: black;
-    padding-left: 1%;
+    padding-left: 5%;
     padding-top: 1.2%;
 }
 
@@ -45,12 +45,12 @@ footer {
     font-size: medium;
     color: dimgrey;
     line-height: 66%;
-    padding-left: 1%;
+    padding-left: 5%;
 }
 
 aside {
     height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
-    width: 10%;
+    width: 15%;
     position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
     z-index: 1; /* Сайд-бар будет поверх остальных элементов */
     top: 0; /* Сайдбар будет в самой верхней части страницы */
@@ -67,4 +67,18 @@ body {
 
 input:focus {
     border: 2px solid dimgrey;
+}
+
+.review-container, .review-button {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.review-text {
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 5%;
+    padding-top: 1%;
 }
